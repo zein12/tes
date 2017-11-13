@@ -1,6 +1,4 @@
 # encoding: utf-8
-import time, datetime, random ,sys, re, string, os, json
-
 from flask import Flask, request, abort
 
 from linebot import (
