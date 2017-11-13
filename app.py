@@ -1,5 +1,4 @@
 # encoding: utf-8
-from LineAlpha.LineThrift.TalkService import Client
 from flask import Flask, request, abort
 
 from linebot import (
