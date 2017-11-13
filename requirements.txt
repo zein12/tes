@@ -1,2 +1,4 @@
 line-bot-sdk
 flask
+rsa
+thrift==0.9.3
