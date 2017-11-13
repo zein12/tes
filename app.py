@@ -11,9 +11,6 @@ from linebot.models import (
     MessageEvent, TextMessage, TextSendMessage,
 )
 
-reload(sys)
-sys.setdefaultencoding('utf-8')
-
 profile, setting, tracer = client.getProfile(), client.getSettings(), LineTracer(client)
 offbot, messageReq, wordsArray, waitingAnswer = [], {}, {}, {}
 
