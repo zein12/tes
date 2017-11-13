@@ -12,6 +12,14 @@ from linebot.models import (
 )
 
 from LineAlpha.LineThrift.ttypes import Message
+from LineAlpha.LineThrift.TalkService import Client
+import time, datetime, random ,sys, re, string, os, json
+
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
+profile, setting, tracer = client.getProfile(), client.getSettings(), LineTracer(client)
+offbot, messageReq, wordsArray, waitingAnswer = [], {}, {}, {}
 
 app = Flask(__name__)
 
