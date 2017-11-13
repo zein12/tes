@@ -11,9 +11,6 @@ from linebot.models import (
     MessageEvent, TextMessage, TextSendMessage,
 )
 
-profile, setting, tracer = client.getProfile(), client.getSettings(), LineTracer(client)
-offbot, messageReq, wordsArray, waitingAnswer = [], {}, {}, {}
-
 app = Flask(__name__)
 
 handler = WebhookHandler('cd4b09431f7b7d51e5e24571d4415cea') 
