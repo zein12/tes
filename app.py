@@ -1,4 +1,8 @@
 # encoding: utf-8
+from LineAlpha.LineThrift.ttypes import Message
+from LineAlpha.LineThrift.TalkService import Client
+import time, datetime, random ,sys, re, string, os, json
+
 from flask import Flask, request, abort
 
 from linebot import (
@@ -10,10 +14,6 @@ from linebot.exceptions import (
 from linebot.models import (
     MessageEvent, TextMessage, TextSendMessage,
 )
-
-from LineAlpha.LineThrift.ttypes import Message
-from LineAlpha.LineThrift.TalkService import Client
-import time, datetime, random ,sys, re, string, os, json
 
 reload(sys)
 sys.setdefaultencoding('utf-8')
