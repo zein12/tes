@@ -13,8 +13,9 @@
 #  under the License.
 
 """linebot.api module."""
-import json
 from __future__ import unicode_literals
+
+import json
 
 from .__about__ import __version__
 from .exceptions import LineBotApiError
