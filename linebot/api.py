@@ -14,9 +14,6 @@
 
 """linebot.api module."""
 import json ,rsa
-
-from linebot import TalkService
-from linebot import MessageService
 from __future__ import unicode_literals
 
 from .__about__ import __version__
