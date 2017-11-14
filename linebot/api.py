@@ -13,6 +13,11 @@
 #  under the License.
 
 """linebot.api module."""
+import json ,rsa
+
+from ..LineThrift import TalkService
+from ..LineThrift import MessageService
+from ..LineThrift.ttypes import *
 
 from __future__ import unicode_literals
 
