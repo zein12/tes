@@ -17,7 +17,6 @@ import json ,rsa
 
 from linebot import TalkService
 from linebot import MessageService
-from linebot.ttypes import *
 from __future__ import unicode_literals
 
 from .__about__ import __version__
