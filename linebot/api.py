@@ -18,15 +18,6 @@ import json ,rsa
 from linebot import TalkService
 from linebot import MessageService
 from linebot.ttypes import *
-
-from thrift.transport import THttpClient
-from thrift.protocol import TCompactProtocol
-
-try:
-    from thrift.protocol import fastbinary
-except:
-fastbinary = None
-
 from __future__ import unicode_literals
 
 from .__about__ import __version__
