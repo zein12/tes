@@ -21,6 +21,10 @@ from abc import ABCMeta, abstractmethod, abstractproperty
 import requests
 from future.utils import with_metaclass
 
+from ..LineThrift.ttypes import Message
+import json, requests, tempfile, shutil
+import unicodedata
+from random import randint
 
 class HttpClient(with_metaclass(ABCMeta)):
     """Abstract Base Classes of HttpClient."""
