@@ -13,7 +13,7 @@
 #  under the License.
 
 """linebot.api module."""
-import json ,rsa
+import json
 from __future__ import unicode_literals
 
 from .__about__ import __version__
