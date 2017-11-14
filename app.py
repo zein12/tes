@@ -1,4 +1,6 @@
 # encoding: utf-8
+from LineAlpha.LineThrift.ttypes import Message
+
 from flask import Flask, request, abort
 
 from linebot import (
