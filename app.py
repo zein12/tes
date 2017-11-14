@@ -11,8 +11,6 @@ from linebot.models import (
     MessageEvent, TextMessage, TextSendMessage,
 )
 
-import time, datetime, random ,sys, re, string, os, json
-
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
