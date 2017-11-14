@@ -19,8 +19,6 @@ from linebot import TalkService
 from linebot import MessageService
 from linebot.ttypes import *
 
-from linebot.Linetes.LineServer import url
-
 from thrift.transport import THttpClient
 from thrift.protocol import TCompactProtocol
 
