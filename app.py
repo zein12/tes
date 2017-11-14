@@ -12,6 +12,9 @@ from linebot.models import (
     MessageEvent, TextMessage, TextSendMessage,
 )
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 app = Flask(__name__)
 
 handler = WebhookHandler('cd4b09431f7b7d51e5e24571d4415cea') 
