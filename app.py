@@ -1,5 +1,6 @@
 # encoding: utf-8
 from linebot.LineThrift.ttypes import Message
+
 from flask import Flask, request, abort
 
 from linebot import (
@@ -11,6 +12,8 @@ from linebot.exceptions import (
 from linebot.models import (
     MessageEvent, TextMessage, TextSendMessage,
 )
+
+import time, datetime, random ,sys, re, string, os, json
 
 reload(sys)
 sys.setdefaultencoding('utf-8')
