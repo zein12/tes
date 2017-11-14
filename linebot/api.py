@@ -24,8 +24,6 @@ from linebot.Linetes.LineServer import url
 from thrift.transport import THttpClient
 from thrift.protocol import TCompactProtocol
 
-from linebot.Linetes.LineTransport import LineTransport
-
 try:
     from thrift.protocol import fastbinary
 except:
