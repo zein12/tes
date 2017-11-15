@@ -18,6 +18,16 @@ line_bot_api = LineBotApi('A9JXENvNmboY5aRvviYz6ml779WP1JW0l8NrUD1kAJRbwAoMN/G5V
 
 profile = offbot, messageReq, wordsArray, waitingAnswer = [], {}, {}, {}
 
+wait = {
+    'readPoint':{},
+    'readMember':{},
+    'setTime':{},
+    'ROM':{}
+   }
+
+setTime = {}
+setTime = wait["setTime"]
+
 @app.route('/')
 def index():
     return "<p>Hello World!</p>"
