@@ -16,8 +16,7 @@ app = Flask(__name__)
 handler = WebhookHandler('cd4b09431f7b7d51e5e24571d4415cea') 
 line_bot_api = LineBotApi('A9JXENvNmboY5aRvviYz6ml779WP1JW0l8NrUD1kAJRbwAoMN/G5VYnzMyWJN9b87nboZNfYswmvHy/LaP0CPelTbLbOZfO8ddnDw+VrCImbwstbKR/J+X7Ovt/7sTGPgtaSyxzodyZPJ6xGzbiKzAdB04t89/1O/w1cDnyilFU=') 
 
-profile, setting, tracer = client.getProfile(), client.getSettings(), LineTracer(client)
-offbot, messageReq, wordsArray, waitingAnswer = [], {}, {}, {}
+profile = offbot, messageReq, wordsArray, waitingAnswer = [], {}, {}, {}
 
 @app.route('/')
 def index():
