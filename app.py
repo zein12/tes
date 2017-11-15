@@ -62,22 +62,6 @@ def handle_text_message(event):                  # default
     # 針對使用者各種訊息的回覆 End =========
 
 # ================= 機器人區塊 End =================
-
-def SEND_MESSAGE(op):
-    msg = op.message
-    try:
-        if msg.toType == 0:
-            if msg.contentType == 0:
-                if msg.text == "mid":
-                    sendMessage(msg.to, msg.to)
-                if msg.text == "me":
-                    sendMessage(msg.to, text=None, contentMetadata={'mid': msg.from_}, contentType=13)
-                if msg.text == "gift":
-                    sendMessage(msg.to, text="gift sent", contentMetadata=None, contentType=9)
-                else:
-                    pass
-            else:
-                pass
         if msg.toType == 2:
             if msg.contentType == 0:
                 if msg.text == "mid":
